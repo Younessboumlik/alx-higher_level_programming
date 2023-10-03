@@ -4,9 +4,9 @@ s = 1
 number = random.randint(-10000, 10000)
 if number < 0:
     s = -1
-if (s * number[-1] > 5):
+if (s * str(number)[-1] > 5):
     print("Last digit of", number, "is", str(number)[-1], "and is greater than 5")
-elif (s * number[-1] == 0):
+elif (s * str(number)[-1] == 0):
     print("Last digit of", number, "is", str(number)[-1], "and is 0")
 else:
     i = str(number)[-1]
