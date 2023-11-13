@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""writes a string to a text."""
+"""
+Contains the function "wrtie_file"
+"""
 
 
 def write_file(filename="", text=""):
-    """write the content in the file."""
-    with open(filename,'w', encoding="utf-8") as f:
-        f.write(text)
-    return len(text)+2
+    """returns the number of chars written to "filename" from "text" """
+    with open(filename, 'w', encoding='utf=8') as f:
+        return f.write(text)
