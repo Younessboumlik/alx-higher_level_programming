@@ -26,5 +26,15 @@ class Square(Rectangle):
     def size(self, value):
         self.width = value
         self.height = value
+
     def __str__(self):
         return "[Square] ({}) {}/{} - {}".format(self.id,self.x,self.y,self.height)
+
+    def to_dictionary(self):
+        """transform donnes to dictionnaire"""
+        return{
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
