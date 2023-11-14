@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """Defines a square class."""
 from models.rectangle import Rectangle
 
@@ -17,6 +16,7 @@ class Square(Rectangle):
             id (int): The identity of the new Square.
         """
         super().__init__(size, size, x, y, id)
+
     @property
     def size(self):
         """Get the size of the Square."""
@@ -29,13 +29,16 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return the print() and str() representation of a Square."""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}"
+        .format(self.id, self.x, self.y, self.width)
 
     def to_dictionary(self):
         """transform donnes to dictionnaire"""
-        return{
+        dic = dict()
+        dic = {
             "id": self.id,
             "size": self.width,
             "x": self.x,
             "y": self.y
         }
+        return dic
