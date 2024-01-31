@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """this is a simple program getting informations of a connection using urllib."""
+
 import urllib.request
+
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
         body = response.read()
         print("Body response:")
