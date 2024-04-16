@@ -18,15 +18,6 @@ class Rectangle{
       }
       console.log(line.slice(1));
     }
-    rotate(){
-        temp = this.height;
-        this.height = this.width;
-        this.width = temp;
-    }
-    double(){
-        this.height = this.height * 2;
-        this.width = this.width * 2;
-    }
   }
 
 module.exports = Rectangle;
