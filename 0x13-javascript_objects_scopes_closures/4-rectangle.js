@@ -19,6 +19,7 @@ class Rectangle{
       console.log(line.slice(1));
     }
     rotate(){
+        let temp;
         temp = this.height;
         this.height = this.width;
         this.width = temp;
