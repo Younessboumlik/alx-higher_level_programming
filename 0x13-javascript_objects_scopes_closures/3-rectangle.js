@@ -8,8 +8,8 @@ class Rectangle{
     }
   }
   print(){
-    for(i = 0; i < h; i++){
-      for(j = 0;j < w; j++){
+    for(i = 0; i < w; i++){
+      for(j = 0;j < h; j++){
           console.log('X');
       }
     }
