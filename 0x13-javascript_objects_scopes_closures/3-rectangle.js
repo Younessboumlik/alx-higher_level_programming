@@ -10,9 +10,9 @@ class Rectangle{
     print(){
       let i,j;
       let line = ''
-      for(i = 0; i < this.width; i++){
+      for(i = 0; i < this.height; i++){
         line += '\n'
-        for(j = 0;j < this.height; j++){
+        for(j = 0;j < this.width; j++){
             line += 'X'
         }
       }
