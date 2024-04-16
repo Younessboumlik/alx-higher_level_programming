@@ -16,7 +16,7 @@ class Rectangle{
             line += 'X'
         }
       }
-      console.log(line);
+      console.log(line.slice(1));
     }
   }
 
